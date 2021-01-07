@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>myGBUspace</title>
+</head>
+
+<body>
+    <div class="navigation sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="http://127.0.0.1:5500/mygbuspace/index.html">myGBUspace</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/mygbuspace/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://127.0.0.1:5500/mygbuspace/news.html">News <span class="badge bg-danger"
+                                    style="font-size: 10px;">New</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portal</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Academics</a></li>
+                                <li><a class="dropdown-item" href="#">Notes</a></li>
+                                <li><a class="dropdown-item" href="#">Research Paper</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Explore More</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <button class="btn btn-success">Log In</button>
+                    <button class="btn btn-success mx-4">Sign Up</button>
+
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+        <strong>myGBUspace</strong> recommends you to login/sign up to enjoy more features.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <div class="container back">
+        <h1 class="display-2 text-center mt-5">Welcome to myGBUspace!</h1>
+        <figure class="text-center mt-4">
+            <blockquote class="blockquote">
+                <p> A platform where anyone can build a team for their dream projects and start-ups or any individual
+                    can apply to be a part of them. myGBUspace will provide opportunities and will be having many more
+                    features.
+                </p>
+            </blockquote>
+        </figure>
+        <button type="button" class="btn btn-success btn-lg" onclick="document.location='login.html'">Log In/Sign Up</button>
+    </div>
+    <div class="container-fluid" id="cards">
+        <div class="row cards mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative cards">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Academics</strong>
+                        <h3 class="mb-0">Notes, Research Papers and more</h3>
+                        <p class="card-text mb-auto">Best material and updates about <strong>Academics!</strong></p>
+                        <a href="#" class="stretched-link">Explore More!</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="photos/academics.png" class="bd-placeholder-img mt-4" width="150" height="150"
+                            alt="..." style="margin-right: 20px;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative cards">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Entertainment</strong>
+                        <h3 class="mb-0">Upcoming and ongoing event updates and more</h3>
+                        <p class="mb-auto">Event updates in sports, culture and <strong>Entertainment!</strong></p>
+                        <a href="#" class="stretched-link">Explore More!</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="photos/entertainment2.png" class="bd-placeholder-img mt-4" width="150" height="150"
+                            alt="..." style="margin-right: 20px;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative cards">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Portal</strong>
+                        <h3 class="mb-0">Projects, hands on, team up and more</h3>
+                        <p class="mb-auto">A collaborative platform for all the students on <strong>Portal!</strong></p>
+                        <a href="#" class="stretched-link">Explore More!</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="photos/portal.png" class="bd-placeholder-img mt-4" width="125" height="125" alt="..."
+                            style="margin-right: 20px;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative cards">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Jobs (upcoming feature)*</strong>
+                        <h3 class="mb-0">Placements, preparation and more</h3>
+                        <p class="mb-auto">Everything is coming soon in <strong>Jobs!</strong></p>
+                        <a href="#" class="stretched-link">Explore More!</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="photos/jobs.png" class="bd-placeholder-img mt-4" width="125" height="125" alt="..."
+                            style="margin-right: 20px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="features">
+            <p class="feat h1">FEATURES</p>
+            <div class="row featurette">
+                <div class="col-md-7" style="text-align: left;">
+                    <h2 class="featurette-heading">Communicate, build, explore! <span class="text-muted">It’ll blow your
+                            mind.</span></h2>
+                    <p class="lead">Reduces communication gap and increases connectivity among the students. One can upload project ideas and build team!</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="photos/team.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" alt="...">
+                </div>
+            </div>
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2" style="text-align: right; margin-top: -2em;">
+                    <h2 class="featurette-heading">Placement Assistance for everyone! <span class="text-muted">Coming Soon.</span></h2>
+                    <p class="lead">Companies can easily go through the live projects of the students by accessing the portal and pick up whosoever is best for them. Hiring made easy with myGBUspace!</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="photos/place.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" alt="..." style="margin-top: -4em;">
+                </div>
+            </div>
+            <div class="row featurette">
+                <div class="col-md-7" style="text-align: left; margin-top: -2em;">
+                    <h2 class="featurette-heading">Opportunities at your fingertips!<span class="text-muted"> We ain't joking.</span></h2>
+                    <p class="lead">Junior year students can participate in the on-going projects with the Seniors. Enhanced opportunities and exposure for everyone!</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="photos/oppo2.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="240" height="240" alt="..." style="margin-top: -1.5em;">
+                </div>
+            </div>
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2" style="text-align: right; margin-top: -2em;">
+                    <h2 class="featurette-heading">Updates, notes just one click away! <span class="text-muted">We got you.</span></h2>
+                    <p class="lead">Events and cultural updates along with academics material, everything is available. Access free notes for every subject!</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="photos/up2.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250" height="250" alt="..." style="margin-top: -1.5em;">
+                </div>
+            </div>
+            <!-- <a href="#">Back to top</a> -->
+        </div>
+        <div class="container">
+            <p class="display-5 mt-4" style="color: rgb(0,0,95);">So, what are you waiting for!</p>
+            <p class="display-6" style="color: rgb(0,0,95);">Join myGBUspace now <a href="#" style="text-decoration: none;">here.</a></p>
+            <img src="photos/jump.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto mb-4" width="516" height="300" alt="...">
+        </div>
+    </div>
+
+    <footer style="color: #dadada; background-color: rgb(0,0,95);">
+        <p class="display-3">myGBUspace.co.in  <span class="text-muted">Contact Us: 8860542694</span></p>
+        <p class="float-end"><a href="#" style="text-decoration: none;">Back to top</a></p>
+        <p>© 2020-2021 myGBUspace, Inc. · <a href="#" >Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
