@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(31, 31, 31);
+    background-color: #dadada;
     z-index: -3;
 }
 
@@ -27,7 +27,7 @@ body{
 }
 
 .nav-item{
-    margin-left: 20px;
+    margin-left: 5px;
     font-size: 1.1rem;
     padding: 4px;
 }
