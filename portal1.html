@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/portal.css">
+    <title>Portal | myGBUspace</title>
+</head>
+
+<body>
+    <div class="navigation sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container-fluid">
+                <a href="index.html"><img src="photos/logo.png" alt="" width="80" height="50"
+                        style="margin-left:-1em;"></a>
+                <a class="navbar-brand" href="index.html">myGBUspace</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">News <span class="badge bg-danger"
+                                    style="font-size: 10px;">New</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="portal1.html">Portal</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Academics
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Notes</a></li>
+                                <li><a class="dropdown-item" href="#">E-Books</a></li>
+                                <li><a class="dropdown-item" href="#">Research Paper</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Explore More</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Entertainment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <button class="btn btn-success" onclick="document.location='login.html'">Log In</button>
+                    <button class="btn btn-success mx-4" onclick="document.location='signup.html'">Sign Up</button>
+
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <main>
+        
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="1" class=""></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="2" class=""></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="photos/prog4.jfif"  height=400 alt="" class="d-block w-100" >
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Welcome to myGBUspace Portal</h1>
+                            <p>Join now to enjoy all the priviledges!</p>
+                            <p><a class="btn btn-lg btn-success" href="login.html" role="button">Log In</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="photos/prog3.jfif" height="400" class="d-block w-100" alt="">
+                    <div class="container">
+                        <div class="carousel-caption text-start" style="color: #dadada;">
+                            <h1>Projects, hands on, team up and more</h1>
+                            <p>A collaborative platform for all the students!</p>
+                            <p><a class="btn btn-lg btn-success" href="signup.html" role="button">Sign up today</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="photos/prog.jfif" height="400" class="d-block w-100" alt="">
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>Increase your circle by registering here</h1>
+                            <p>Get in touch with other students and work on real time projects!</p>
+                            <p><a class="btn btn-lg btn-success" href="#market" role="button">Explore more</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+
+
+
+        <div class="container marketing" id="market">
+            <div class="row text-center mt-5">
+                <div class="col-lg-4">
+                    <img src="photos/team.png" class="bd-placeholder-img rounded-circle" width="140" height="140" style="box-shadow: 0px 0px 10px rgb(0,0,95);">
+                    <h2>Connect and build</h2>
+                    <p>Reduces communication gap and increases connectivity among the students. Junior year students can participate in the on-going projects with the Seniors.</p>
+
+                </div>
+                <div class="col-lg-4">
+                    <img src="photos/up2.png" class="bd-placeholder-img rounded-circle" width="140" height="140" style="box-shadow: 0px 0px 10px rgb(0,0,95);">
+                    <h2>Showcase your work</h2>
+                    <p>Companies can easily go through the work of the students by accessing the portal. One can upload project ideas and build team.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="photos/oppo2.png" class="bd-placeholder-img rounded-circle" width="140" height="140" style="box-shadow: 0px 0px 10px rgb(0,0,95);">
+                    <h2>Opportunities and more</h2>
+                    <p>Enhanced opportunities and exposure for the students. Provides easy registeration for the upcoming events in the university.</p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+        </div>
+        
+
+        <!-- FOOTER -->
+        <footer style="color: #dadada; background-color: rgb(0,0,95); height: 10em; margin-top: 1em;">
+            <a href="#" style="text-decoration: none;" class="float-end text-success"><svg xmlns="http://www.w3.org/2000/svg"
+                width="50" height="50" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16"
+                style="margin: 0.5em;">
+                <path
+                  d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+              </svg>
+            </a>
+            <p class="h3" style="margin-left: 0.5em;">myGBUspace.co.in</p>
+            <p style="margin-left: 1em;">
+              Gautam Buddha University <br>
+              Greater Noida, Uttar Pradesh <br>
+              Contact Us: 8860542694
+            </p>
+            <p class="text-center">© 2020-2021 myGBUspace, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+          </footer>
+    </main>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
