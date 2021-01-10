@@ -8,17 +8,22 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="css/about.css">
-    <title>About Us | myGBUspace</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <title>Contact Us | myGBUspace</title>
 </head>
 
 <body>
     <div class="navigation sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
             <div class="container-fluid">
-                <a href="index.html"><img src="photos/logo.png" alt="" width="80" height="50"
-                        style="margin-left:-1em;"></a>
+                <a href="index.html"><img src="photos/logo.png" alt="" width="80" height="50" style="margin-left:-1em;"></a>
                 <a class="navbar-brand" href="index.html">myGBUspace</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -28,11 +33,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" aria-current="page"
+                                href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="news.html">News <span class="badge bg-danger"
-                                    style="font-size: 10px;">New</span></a>
+                            <a class="nav-link" href="news.html">News <span
+                                    class="badge bg-danger" style="font-size: 10px;">New</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="portal1.html">Portal</a>
@@ -53,10 +59,10 @@
                             <a class="nav-link" href="entertainment.html">Entertainment</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="about.html">About Us</a>
+                            <a class="nav-link" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact Us</a>
+                            <a class="nav-link active" href="contact.html">Contact Us</a>
                         </li>
                     </ul>
 
@@ -71,21 +77,43 @@
             </div>
         </nav>
     </div>
-    <div class="container">
-        <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading">Want to know <span class="text-muted">About Us ?</span></h2>
-              <p class="lead"><strong>myGBUspace</strong> is an initiative through which students can collaborate for a project or can hire their fellow mates for the same. 
-                Aim is to provide a common platform for seekers and providers. It will also help junior year students to get an insight of how a project is actually build. Along with academics, myGBUspace has an entertainment section which will give updates about on going events in GBU, somewhat like a social media platform only for GBU students.
-                </p>
-            </div>
-            <div class="col-md-5">
-                <img src="photos/6308.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width=500 height =500 alt="">      
-            </div>
-          </div>
-    </div>
+	<div id="contact" class="mt-5">
+		<div class="social">
+			<a href="https://facebook.com" target="blank"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
+			<a href="https://instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+			<a href="https://www.linkedin.com/" target="blank"><i class="fab fa-linkedin"></i></a>
+		</div>
+		<div class="contact-box">
+			<div class="c-heading">
+				<h1>Get In Touch</h1>
+				<p>Call or Email us regarding questions or issues</p>
+			</div>
+	
+			<div class="c-inputs">
+				<form>
+					<div class="form-group">
+						<input type="text" placeholder="Full Name" class="form-control">
+					</div>
+					<div class="form-group">
+						<input type="email" placeholder="E-mail" class="form-control">
+					</div>
+					<div class="form-group">
+						<textarea name="message" placeholder="Write Message"></textarea>
+					</div>
+					<button class = "btn btn-success btn-md" style="margin-left: 1.5em;" >Send</button>
+				</form>
+			</div>
+
+		</div>
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.047671509996!2d77.52409980380376!3d28.417818378113818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc0fbde92f919%3A0x8abfb97ed472bda6!2sSchool%20of%20ICT!5e0!3m2!1sen!2sin!4v1610049140001!5m2!1sen!2sin"
+				width="600" height="450" frameborder="0" style="border-radius: 15px;" allowfullscreen="" aria-hidden="false"
+				tabindex="0"></iframe>
+		</div>
+	</div>
         <!-- FOOTER -->
-        <footer style="color: #dadada; background-color: rgb(0,0,95); height: 10em; margin-top: 3.4em;">
+    <footer style="color: #dadada; background-color: rgb(0,0,95); height: 10em; margin-top: 3.4em;">
             <a href="#" style="text-decoration: none;" class="float-end text-success"><svg xmlns="http://www.w3.org/2000/svg"
                 width="50" height="50" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16"
                 style="margin: 0.5em;">
@@ -100,7 +128,7 @@
               Contact Us: 8860542694
             </p>
             <p class="text-center">© 2020-2021 myGBUspace, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-          </footer>
+    </footer>
     </main>
     <!-- Optional JavaScript; choose one of the two! -->
 

@@ -40,7 +40,7 @@
                                     style="font-size: 10px;">New</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="portal1.html">Portal</a>
+                            <a class="nav-link" href="#">Portal</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -49,19 +49,23 @@
                                 Academics
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="notes.html">Notes</a></li>
-                                <li><a class="dropdown-item" href="ebooks.html">E-Books</a></li>
-                                <li><a class="dropdown-item" href="research.html">Research Paper</a></li>                                 
+                                <li><a class="dropdown-item" href="#">Notes</a></li>
+                                <li><a class="dropdown-item" href="#">E-Books</a></li>
+                                <li><a class="dropdown-item" href="#">Research Paper</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Explore More</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="entertainment.html">Entertainment</a>
+                            <a class="nav-link" href="#">Entertainment</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
+                            <a class="nav-link" href="#">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact Us</a>
+                            <a class="nav-link" href="#">Contact Us</a>
                         </li>
                     </ul>
 
@@ -80,7 +84,7 @@
         <div class="container">
             <div id="login-row" class="row justify-content-center align-items-center">
                 <div id="login-column" class="col-md-6">
-                    <div id="login-box" class="col-md-12" style="height: 430px;">
+                    <div id="login-box" class="col-md-12" style="height: 400px;">
                         <form id="login-form" class="form" action="" method="post">
                             <h3 class="text-center" style="color: rgb(0, 0, 95);">Sign Up</h3>
                             <div class="form-group">
@@ -101,10 +105,6 @@
                             <div class="form-group">
                                 <input type="submit" name="submit" class="btn btn-success btn-md" value="Submit">
                                 <input type="reset" name="reset" class="btn btn-success btn-md" value="Reset">
-                            </div>                        
-                            <div class="form-group">
-                                <span style="color: rgb(0,0,95);">Already registered ?</span>
-                                <a href="login.html" class="float-end">Login here</a>
                             </div>
                         </form>
                     </div>
@@ -143,3 +143,49 @@
 </body>
 
 </html>
+
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname="minor";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password,$dbname);
+
+
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+
+
+if(isset($_POST['submit']))
+{
+   $name=$_POST['name'];
+   $phone=$_POST['phone'];
+   $email=$_POST['email'];
+   $password=$_POST['password'];
+   $conpassword=$_POST['conpassword'];
+   
+   $res=mysqli_query($conn, "INSERT INTO SIGNUP(Name,Phone,email,Password,CPassword) VALUES('$name','$phone','$email','$password','$conpassword')");
+    
+
+  }
+     if($res)
+  {
+
+  echo "data inserted successfuly";
+  
+} 
+
+  else {
+  
+    echo "unsuccessfull data";
+  
+  
+         }
+         mysqli_close($conn);
+
+?>

@@ -16,14 +16,14 @@
 
 
 
-    <title>Sign Up | myGBUspace</title>
+    <title>Log In | myGBUspace</title>
 </head>
 
 <body>
     <div class="navigation sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
             <div class="container-fluid">
-                <a href="index.html"><img src="photos/logo.png" alt="" width="80" height="50" style="margin-left:-1em;"></a>
+                <a href="index.html"><img src="photos/logo.png" alt="" width="90" height="40" style="margin-left:-1em;"></a>
                 <a class="navbar-brand" href="index.html">myGBUspace</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -40,7 +40,7 @@
                                     style="font-size: 10px;">New</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="portal1.html">Portal</a>
+                            <a class="nav-link" href="#">Portal</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -49,24 +49,28 @@
                                 Academics
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="notes.html">Notes</a></li>
-                                <li><a class="dropdown-item" href="ebooks.html">E-Books</a></li>
-                                <li><a class="dropdown-item" href="research.html">Research Paper</a></li>                                 
+                                <li><a class="dropdown-item" href="#">Notes</a></li>
+                                <li><a class="dropdown-item" href="#">E-Books</a></li>
+                                <li><a class="dropdown-item" href="#">Research Paper</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Explore More</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="entertainment.html">Entertainment</a>
+                            <a class="nav-link" href="#">Entertainment</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
+                            <a class="nav-link" href="#">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact Us</a>
+                            <a class="nav-link" href="#">Contact Us</a>
                         </li>
                     </ul>
 
-                    <button class="btn btn-success" onclick="document.location='login.html'">Log In</button>
-                    <button class="btn btn-success mx-4 active" onclick="document.location='signup.html'">Sign Up</button>
+                    <button class="btn btn-success active" onclick="login.html">Log In</button>
+                    <button class="btn btn-success mx-4" onclick="document.location='signup.html'">Sign Up</button>
 
                     <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -80,31 +84,22 @@
         <div class="container">
             <div id="login-row" class="row justify-content-center align-items-center">
                 <div id="login-column" class="col-md-6">
-                    <div id="login-box" class="col-md-12" style="height: 430px;">
+                    <div id="login-box" class="col-md-12" style="height: 265px;">
                         <form id="login-form" class="form" action="" method="post">
-                            <h3 class="text-center" style="color: rgb(0, 0, 95);">Sign Up</h3>
+                            <h3 class="text-center" style="color: rgb(0, 0, 95);">Log In</h3>
                             <div class="form-group">
-                                <input type="text" name="name" id="name" class="form-control" placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone No.">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="email" id="email" class="form-control" placeholder="E-mail">
+                                <input type="text" name="username" id="username" class="form-control" placeholder="Username/E-mail">
                             </div>
                             <div class="form-group">
                                 <input type="password" name="password" id="password" class="form-control" placeholder="Password">
                             </div>
                             <div class="form-group">
-                                <input type="password" name="conpassword" id="conpassword" class="form-control" placeholder="Confirm Password">
-                            </div>
-                            <div class="form-group">
+                                <label for="remember-me" style="color: rgb(0,0,95);"><span>Remember me</span> <span><input
+                                            id="remember-me" name="remember-me" type="checkbox"></span></label><br>
                                 <input type="submit" name="submit" class="btn btn-success btn-md" value="Submit">
-                                <input type="reset" name="reset" class="btn btn-success btn-md" value="Reset">
-                            </div>                        
-                            <div class="form-group">
-                                <span style="color: rgb(0,0,95);">Already registered ?</span>
-                                <a href="login.html" class="float-end">Login here</a>
+                            </div>
+                            <div id="register-link" class="text-right">
+                                <a href="signup.html" >Register here</a>
                             </div>
                         </form>
                     </div>
@@ -112,7 +107,7 @@
             </div>
         </div>
     </div>
-    <footer style="color: #dadada; background-color: rgb(0,0,95); margin-top: 4em; height: 10em;">
+    <footer style="color: #dadada; background-color: rgb(0,0,95); margin-top: 6.95em; height: 10em;">
         <a href="#" style="text-decoration: none;" class="float-end text-success"><svg
                 xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
                 class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16" style="margin: 0.5em;">
@@ -143,3 +138,45 @@
 </body>
 
 </html>
+
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname="minor";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password,$dbname);
+
+
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+
+
+if(isset($_POST['submit']))
+{
+   $email=$_POST['username'];
+   $password=$_POST['password'];
+    $res=mysqli_query($conn, "INSERT INTO LOGIN(email,password) VALUES('$email','$password')");
+    
+
+  }
+     if($res)
+  {
+
+  echo "data inserted successfuly";
+  
+} 
+
+  else {
+  
+    echo "unsuccessfull data";
+  
+  
+         }
+         mysqli_close($conn);
+
+?>
